@@ -46,7 +46,7 @@ for epochs in range(epochs):
     e_correct = 0
 
 
-test_image = plt.imread('Untitled.jpg', format='jpg')
+test_image = plt.imread('Без имени.png', format='png')
 
 gray = lambda rgb :np.dot(rgb[..., :3], [0.299,0.587, 0.114])
 test_image = 1 -(gray(test_image).astype('float32')/255)
